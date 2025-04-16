@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="module">
+        import { Student } from './Student.js';
+
+
+        let student1 = new Student(1, 'Popescu', 'Dan', 19);
+        let student2 = new Student(2, 'Georgescu', 'Ana', 20);
+        console.log('student1 :>> ', student1);
+        console.log('student2 :>> ', student2);
+
+        student1.salut();
+        student2.salut();
+
+        student1.examen(8, 10);
+        student2.calMedia();
+        student.nota1 = 7;
+        student.nota2 = 9;
+        student2.calMedia();
+        
+
+        console.log(`${student1.nume} ${student1.prenume} a luat examenul cu nota ${student1.nota1} si ${student1.nota2}`);
+
+    </script>
+</body>
+
+</html>
