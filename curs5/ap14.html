@@ -7,13 +7,15 @@
 </head>
 <body>
     <script>
-        const Person = function(name, age) {
-            this.name = name;
-            this.age = age;
-            this.describe = function() {
-                  return `${this.name} - ${this.age}`;
-            };
-        };
+        class Person {
+            constructor(name, age){
+                this.name = name;
+                this.age = age;
+            }
+            describe(){
+                return `${this.name} are ${this.age} ani`;
+            }
+        }
         var dan = new Person("Dan", 19);
         var ion = new Person("Ion", 24);
         console.log(dan.describe());
