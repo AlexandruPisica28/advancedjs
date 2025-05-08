@@ -11,4 +11,6 @@ class StudentNou {
 }
 
 let studentnou: StudentNou = new StudentNou(1, "JoeRoot");
+studentnou.studCode = 3;
+// studentnou.studName = "JoeRoot"; // Error: Property 'studName' is private and only accessible within class 'StudentNou'.
 console.log(studentnou.display());

@@ -1,9 +1,11 @@
 class Student2 {  
     public studCode: number;  
     protected studName: string;  
-    constructor(code: number, name: string){  
+    private studAge: number;
+    constructor(code: number, name: string, age: number = 25) {  
         this.studCode = code;  
         this.studName = name;  
+        this.studAge = age;
         }  
 }  
 class Person extends Student2 {  
